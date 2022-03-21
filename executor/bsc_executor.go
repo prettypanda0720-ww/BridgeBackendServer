@@ -46,10 +46,12 @@ func NewBSCExecutor(ethClient *ethclient.Client, swapAddr string, config *util.C
 	if chainId == 56 || chainId == 97 {
 		chainName = common.ChainBSC
 	}
-	if chainId == 137 || chainId == 80001 {
+	if chainId == 25 || chainId == 338 {
 		chainName = common.ChainMATIC
 	}
-
+	// if chainId == 137 || chainId == 80001 {
+	// 	chainName = common.ChainMATIC
+	// }
 	return &BscExecutor{
 		Chain:            chainName,
 		Config:           config,

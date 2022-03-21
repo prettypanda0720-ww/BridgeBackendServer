@@ -9,7 +9,8 @@ const (
 
 	ChainBSC   = "BSC"   // binance smart chain
 	ChainETH   = "ETH"   // ethereum
-	ChainMATIC = "MATIC" //polygon
+	// ChainMATIC = "MATIC" //polygon
+	ChainMATIC = "CRO" //cronos
 
 	VaultName = "BSC_ETH_SWAP"
 
