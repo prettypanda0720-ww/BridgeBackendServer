@@ -15,7 +15,7 @@
   "chain_config": {
     "balance_monitor_interval": 60,
     "bsc_observer_fetch_interval":1,
-    "bsc_start_height": 17749897,
+    "bsc_start_height": 17760631,
     "bsc_provider": "https://speedy-nodes-nyc.moralis.io/82b36076dd58daf8cf063484/bsc/testnet",
     "bsc_confirm_num": 2,
     "bsc_swap_agent_addr": "0xBDc4e500469c98A6225aFD0B8c19FF9f8ceD6CD1",
@@ -33,7 +33,7 @@
     "eth_alert_threshold": "1000000000000000000",
     "eth_wait_milli_sec_between_swaps": 200,
     "matic_observer_fetch_interval": 10,
-    "matic_start_height": 2361401,
+    "matic_start_height": 2367127,
     "matic_provider": "https://cronos-testnet-3.crypto.org:8545",
     "matic_confirm_num": 1,
     "matic_swap_agent_addr": "0x78f9d9864C3681be033Dd4F01590c6B50ea2E4aE",
