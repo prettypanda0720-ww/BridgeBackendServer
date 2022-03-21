@@ -1,0 +1,63 @@
+{
+  "key_manager_config": {
+    "key_type": "local_private_key",
+    "aws_region": "",
+    "aws_secret_name": "",
+    "local_hmac_key": "1234567890123",
+    "local_bsc_private_key": "d31e04eedab46c51d3dceba39763213e1e7ef1f157c3b9a1e157287d9a484ac8",
+    "local_eth_private_key": "d31e04eedab46c51d3dceba39763213e1e7ef1f157c3b9a1e157287d9a484ac8",
+    "local_matic_private_key": "d31e04eedab46c51d3dceba39763213e1e7ef1f157c3b9a1e157287d9a484ac8"
+  },
+  "db_config": {
+    "dialect": "sqlite3",
+    "db_path": "./build/test.db"
+  },
+  "chain_config": {
+    "balance_monitor_interval": 60,
+    "bsc_observer_fetch_interval":1,
+    "bsc_start_height": 17713256,
+    "bsc_provider": "https://speedy-nodes-nyc.moralis.io/82b36076dd58daf8cf063484/bsc/testnet",
+    "bsc_confirm_num": 2,
+    "bsc_swap_agent_addr": "0xBDc4e500469c98A6225aFD0B8c19FF9f8ceD6CD1",
+    "bsc_explorer_url": "https://testnet.bscscan.com/tx",
+    "bsc_max_track_retry": 60,
+    "bnb_alert_threshold": "1000000000000000000",
+    "bsc_wait_milli_sec_between_swaps": 100,
+    "eth_observer_fetch_interval": 10,
+    "eth_start_height": 10363400,
+    "eth_provider": "https://rinkeby.infura.io/v3/e6014e03a56442258e3c09c1cef450d4",
+    "eth_confirm_num": 1,
+    "eth_swap_agent_addr": "0x70B7C5919786aC6074b6796B5E6115Ee0f4AB166",
+    "eth_explorer_url": "https://rinkeby.etherscan.io/tx",
+    "eth_max_track_retry": 600,
+    "eth_alert_threshold": "1000000000000000000",
+    "eth_wait_milli_sec_between_swaps": 200,
+    "matic_observer_fetch_interval": 10,
+    "matic_start_height": 24953339,
+    "matic_provider": "https://speedy-nodes-nyc.moralis.io/82b36076dd58daf8cf063484/polygon/mumbai",
+    "matic_confirm_num": 1,
+    "matic_swap_agent_addr": "0xC6289e2d3aA0880d6F718B7972736294c600bbd9",
+    "matic_explorer_url": "https://mumbai.polygonscan.com/tx",
+    "matic_max_track_retry": 600,
+    "matic_alert_threshold": "1000000000000000000",
+    "matic_wait_milli_sec_between_swaps": 200
+  },
+  "log_config": {
+    "level": "DEBUG",
+    "filename": "build/test.log",
+    "max_file_size_in_mb": 100,
+    "max_backups_of_log_files": 1,
+    "max_age_to_retain_log_files_in_days": 30,
+    "use_console_logger": false,
+    "use_file_logger": true,
+    "compress": false
+  },
+  "alert_config": {
+    "telegram_bot_id": "",
+    "telegram_chat_id": "",
+    "block_update_timeout": 10
+  },
+  "admin_config": {
+    "listen_addr": ":8001"
+  }
+}
