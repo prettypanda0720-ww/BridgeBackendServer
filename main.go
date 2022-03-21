@@ -128,8 +128,7 @@ func main() {
 	ethObserver := observer.NewObserver(db, config.ChainConfig.ETHStartHeight, config.ChainConfig.ETHConfirmNum, config, ethExecutor)
 	ethObserver.Start()
 
-	// maticExecutor := executor.NewBSCExecutor(maticClient, config.ChainConfig.MATICSwapAgentAddr, config, 80001)
-	maticExecutor := executor.NewBSCExecutor(maticClient, config.ChainConfig.MATICSwapAgentAddr, config, 338)
+	maticExecutor := executor.NewBSCExecutor(maticClient, config.ChainConfig.MATICSwapAgentAddr, config, 80001)
 	maticObserver := observer.NewObserver(db, config.ChainConfig.MATICStartHeight, config.ChainConfig.MATICConfirmNum, config, maticExecutor)
 	maticObserver.Start()
 
