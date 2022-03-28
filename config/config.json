@@ -10,12 +10,12 @@
   },
   "db_config": {
     "dialect": "sqlite3",
-    "db_path": "./build/test.db"
+    "db_path": "/var/www/occ-swap-server/build/test.db"
   },
   "chain_config": {
     "balance_monitor_interval": 60,
     "bsc_observer_fetch_interval":1,
-    "bsc_start_height": ,
+    "bsc_start_height": 16446474,
     "bsc_provider": "https://speedy-nodes-nyc.moralis.io/82b36076dd58daf8cf063484/bsc/mainnet",
     "bsc_confirm_num": 2,
     "bsc_swap_agent_addr": "0x2A9bB41855AC4c7c3ECF0D4a756034d01d55b625",
@@ -24,7 +24,7 @@
     "bnb_alert_threshold": "1000000000000000000",
     "bsc_wait_milli_sec_between_swaps": 100,
     "eth_observer_fetch_interval": 10,
-    "eth_start_height": ,
+    "eth_start_height": 14473342,
     "eth_provider": "https://mainnet.infura.io/v3/e6014e03a56442258e3c09c1cef450d4",
     "eth_confirm_num": 1,
     "eth_swap_agent_addr": "0x70B7C5919786aC6074b6796B5E6115Ee0f4AB166",
@@ -33,7 +33,7 @@
     "eth_alert_threshold": "1000000000000000000",
     "eth_wait_milli_sec_between_swaps": 200,
     "matic_observer_fetch_interval": 10,
-    "matic_start_height": ,
+    "matic_start_height": 2100490,
     "matic_provider": "https://evm.cronos.org",
     "matic_confirm_num": 1,
     "matic_swap_agent_addr": "0xF8F972240Bc0aFf58e13610b68F048aD14C8fcE7",
@@ -44,7 +44,7 @@
   },
   "log_config": {
     "level": "DEBUG",
-    "filename": "build/test.log",
+    "filename": "/var/www/occ-swap-server/build/test.log",
     "max_file_size_in_mb": 100,
     "max_backups_of_log_files": 1,
     "max_age_to_retain_log_files_in_days": 30,
