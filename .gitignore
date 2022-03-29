@@ -3,3 +3,4 @@
 build/*
 cmd/*.json
 cmd/send_request
+config/config.json
