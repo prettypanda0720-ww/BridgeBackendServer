@@ -71,7 +71,7 @@ func GetKeyConfig(cfg *util.Config) (*util.KeyConfig, error) {
 			HMACKey:         cfg.KeyManagerConfig.LocalHMACKey,
 			AdminApiKey:     cfg.KeyManagerConfig.LocalAdminApiKey,
 			AdminSecretKey:  cfg.KeyManagerConfig.LocalAdminSecretKey,
-			BSCPrivateKey:   cfg.KeyManagerConfig.LocalBSCPrivateKey,
+			BSCPrivateKey:   cfg.KeyManagerConfig.LocalBSCTxHash,
 			ETHPrivateKey:   cfg.KeyManagerConfig.LocalETHPrivateKey,
 			MATICPrivateKey: cfg.KeyManagerConfig.LocalMATICPrivateKey,
 		}, nil

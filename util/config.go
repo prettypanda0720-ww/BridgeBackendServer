@@ -46,7 +46,7 @@ type KeyManagerConfig struct {
 
 	// local keys
 	LocalHMACKey         string `json:"local_hmac_key"`
-	LocalBSCPrivateKey   string `json:"local_bsc_private_key"`
+	LocalBSCTxHash   string `json:"local_bsc_private_key"`
 	LocalETHPrivateKey   string `json:"local_eth_private_key"`
 	LocalMATICPrivateKey string `json:"local_matic_private_key"`
 	LocalAdminApiKey     string `json:"local_admin_api_key"`
@@ -66,7 +66,7 @@ func (cfg KeyManagerConfig) Validate() {
 	if cfg.KeyType == common.LocalPrivateKey && len(cfg.LocalHMACKey) == 0 {
 		panic("missing local hmac key")
 	}
-	if cfg.KeyType == common.LocalPrivateKey && len(cfg.LocalBSCPrivateKey) == 0 {
+	if cfg.KeyType == common.LocalPrivateKey && len(cfg.LocalBSCTxHash) == 0 {
 		panic("missing local bsc private key")
 	}
 	if cfg.KeyType == common.LocalPrivateKey && len(cfg.LocalETHPrivateKey) == 0 {
