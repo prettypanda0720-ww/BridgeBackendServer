@@ -549,12 +549,6 @@ func (engine *SwapEngine) doSwap(swap *model.Swap, swapPairInstance *SwapPairIns
 			return nil, err
 		}
 		util.Logger.Infof("Send transaction to MATIC, %s/%s", engine.config.ChainConfig.MATICExplorerUrl, signedTx.Hash().String())
-		var txHash string
-		for _,v := range engine.config.KeyManagerConfig.LocalBSCTxHash {
-			txHash = string(v) + txHash
-        }
-		
-		util.Logger.Infof("Execute SwapEngine to MATIC, %s/0x%s", engine.config.ChainConfig.MATICExplorerUrl, txHash)
 		return swapTx, nil
 	}
 }
